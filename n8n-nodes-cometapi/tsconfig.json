@@ -1,0 +1,34 @@
+﻿{
+    "include":  [
+                    "**/*"
+                ],
+    "exclude":  [
+                    "node_modules/**/*",
+                    "dist/**/*"
+                ],
+    "compilerOptions":  {
+                            "emitDecoratorMetadata":  true,
+                            "outDir":  "./dist",
+                            "experimentalDecorators":  true,
+                            "target":  "es2019",
+                            "strictNullChecks":  true,
+                            "skipLibCheck":  true,
+                            "allowSyntheticDefaultImports":  true,
+                            "noImplicitAny":  true,
+                            "declaration":  true,
+                            "strict":  true,
+                            "esModuleInterop":  true,
+                            "lib":  [
+                                        "es2019"
+                                    ],
+                            "forceConsistentCasingInFileNames":  true,
+                            "rootDir":  "./",
+                            "noImplicitReturns":  true,
+                            "module":  "commonjs",
+                            "noUnusedLocals":  true,
+                            "noUnusedParameters":  true,
+                            "moduleResolution":  "node",
+                            "exactOptionalPropertyTypes":  true,
+                            "removeComments":  true
+                        }
+}

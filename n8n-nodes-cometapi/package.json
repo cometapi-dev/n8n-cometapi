@@ -1,0 +1,40 @@
+﻿{
+    "version":  "0.1.0",
+    "n8n":  {
+                "n8nNodesApiVersion":  1,
+                "credentials":  [
+                                    "dist/credentials/CometApiApi.credentials.js"
+                                ],
+                "nodes":  [
+                              "dist/nodes/CometApi/CometApi.node.js"
+                          ]
+            },
+    "license":  "MIT",
+    "files":  [
+                  "dist",
+                  "icons"
+              ],
+    "name":  "n8n-nodes-cometapi",
+    "scripts":  {
+                    "build":  "tsc \u0026\u0026 gulp build:icons"
+                },
+    "description":  "n8n node for CometApi",
+    "devDependencies":  {
+                            "typescript":  "~4.8.4",
+                            "@types/node":  "^18.0.0",
+                            "gulp":  "^4.0.2",
+                            "n8n-workflow":  "*"
+                        },
+    "keywords":  [
+                     "n8n-community-node-package"
+                 ],
+    "author":  {
+                   "name":  "Alan"
+               },
+    "homepage":  "https://github.com/alanyear/CometAPI",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/alanyear/CometAPI.git"
+                   },
+    "main":  "index.js"
+}
