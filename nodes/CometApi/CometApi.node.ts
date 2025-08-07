@@ -11,7 +11,7 @@ export class CometApi implements INodeType {
    description: INodeTypeDescription = {
     displayName: 'CometAPI',
     name: 'cometAPI',
-    icon: 'file:CometAPI.svg',
+    icon: 'file:cometApi.svg',
     group: ['transform'],
     version: 1,
     subtitle: '={{$parameter["operation"]}}',
@@ -105,6 +105,10 @@ export class CometApi implements INodeType {
           {
             name: 'GPT-4',
             value: 'gpt-4',
+          },
+					{
+            name: 'GPT-5',
+            value: 'gpt-5',
           },
         ],
         default: 'gpt-3.5-turbo',
@@ -397,7 +401,6 @@ export class CometApi implements INodeType {
           const requestOptions = {
             headers: {
               'Content-Type': 'application/json',
-              'Accept': 'application/json',
               'Authorization': `Bearer ${apiKey}`,
               'User-Agent': 'n8n-comet-api/1.0',
             },
