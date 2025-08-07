@@ -5,17 +5,16 @@
     INodeProperties,
 } from 'n8n-workflow';
 
-export class CometApiApi implements ICredentialType {
+export class CometApi implements ICredentialType {
     name = 'cometApi';
     displayName = 'CometApi';
     properties: INodeProperties[] = [
         {
-            displayName: 'Token',
-            name: 'Token',
+            displayName: 'API Key',
+            name: 'apiKey',
             type: 'string',
             typeOptions: { password: true },
-            default: '',
-            required: true,
+            default: ''
 
         }
     ];
