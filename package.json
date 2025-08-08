@@ -29,7 +29,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "copy:icons": "cp -r nodes/CometAPI/cometApi.svg dist/nodes/ 2>/dev/null || xcopy \"nodes\\CometAPI\\cometApi.svg\" \"dist\\nodes\\\" /s /y 2>nul || true"
+
   },
   "files": [
     "dist",
