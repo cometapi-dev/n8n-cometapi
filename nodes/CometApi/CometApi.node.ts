@@ -11,7 +11,7 @@ export class CometApi implements INodeType {
    description: INodeTypeDescription = {
     displayName: 'CometAPI',
     name: 'cometAPI',
-    icon: 'file:CometAPI.svg',
+    icon: 'file:cometApi.svg',
     group: ['transform'],
     version: 1,
     subtitle: '={{$parameter["operation"]}}',
