@@ -3,17 +3,24 @@
   "name": "n8n-nodes-cometapi",
   "version": "0.1.0",
   "description": "n8n nodes for CometApi",
-  "keywords": ["n8n-community-node-package"],
+  "keywords": [
+    "n8n-community-node-package"
+  ],
   "main": "index.js",
   "scripts": {
     "build": "tsc && gulp build:icons"
-
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "nodes": ["dist/nodes/CometApi/CometApi.node.js"],
-    "credentials": ["dist/credentials/CometApiApi.credentials.js"]
+    "nodes": [
+      "dist/nodes/CometApi/CometApi.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/CometApiApi.credentials.js"
+    ]
   },
   "devDependencies": {
     "gulp": "^4.0.2",
