@@ -1,25 +1,17 @@
 ﻿{
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es2022",
-    "lib": ["es2022", "dom"],
+    "target": "es2019",
+    "lib": ["es2019"],
     "declaration": true,
+    "outDir": "./dist",
     "strict": true,
-    "noImplicitAny": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "sourceMap": false,
-    "outDir": "./dist",
-    "rootDir": ".",
-    "typeRoots": ["./node_modules/@types"]
+    "resolveJsonModule": true
   },
   "include": [
-    "credentials/**/*",
     "nodes/**/*"
   ],
   "exclude": [
