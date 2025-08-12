@@ -1,49 +1,42 @@
 {
   "name": "n8n-nodes-cometapi",
-  "version": "1.0.2",
-  "description": "n8n community node for CometAPI and other AI services with smart URL routing and custom JSON support",
+  "version": "0.2.0",
+  "description": "n8n nodes for CometApi",
   "keywords": [
-    "n8n-community-node-package",
-    "n8n",
-    "comet-api",
-    "openai",
-    "anthropic",
-    "ai",
-    "chatgpt",
-    "claude"
+    "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/cometapi-dev/n8n-nodes-cometapi",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons"
+  },
   "author": {
     "name": "Alan Austin",
-    "email": "devpartner930@gmail.com"
+    "email": "devpartner@cometapi.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cometapi-dev/n8n-nodes-cometapi.git"
-  },
-  "bugs": {
-    "url": "https://github.com/cometapi-dev/n8n-nodes-cometapi/issues"
-  },
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-
+    "url": "https://github.com/cometapi-dev/n8n-cometapi.git"
   },
   "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
+    "dist"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [],
     "nodes": [
       "dist/nodes/CometApi/CometApi.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/CometApiApi.credentials.js"
     ]
   },
-  "engines": {
-    "node": ">=16.0.0"
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "n8n-workflow": "1.0.0",
+    "typescript": "^5.0.0"
+  },
+  "overrides": {
+    "snowflake-sdk": "npm:empty-package@1.0.0",
+    "@azure/storage-blob": "npm:empty-package@1.0.0"
   }
 }

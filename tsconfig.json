@@ -5,14 +5,18 @@
     "lib": ["es2019"],
     "declaration": true,
     "outDir": "./dist",
+    "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   },
   "include": [
-    "nodes/**/*"
+    "nodes/**/*",
+    "credentials/**/*"
   ],
   "exclude": [
     "node_modules/**/*",
