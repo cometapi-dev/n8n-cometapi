@@ -6,8 +6,9 @@
 } from 'n8n-workflow';
 
 export class CometApiApi implements ICredentialType {
-    name = 'CometApiApi';
-    displayName = 'CometApiApi';
+    name = 'cometApiApi';
+    displayName = 'CometAPI';
+		documentationUrl = 'https://api.deerapi.com/doc';
     properties: INodeProperties[] = [
         {
             displayName: 'API Key',
@@ -33,6 +34,7 @@ export class CometApiApi implements ICredentialType {
 		request: {
 			baseURL: 'https://api.cometapi.com',
 			url: '/api/user/self',
+			method: 'GET',
 		},
 	};
 }
