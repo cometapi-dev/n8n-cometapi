@@ -1,17 +1,34 @@
 ﻿{
   "name": "n8n-nodes-cometapi",
-  "version": "0.1.0",
-  "description": "n8n nodes for FriendGrid CometApi",
-  "keywords": ["n8n-community-node-package"],
+  "version": "0.2.7",
+  "description": "n8n nodes for CometApi",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "build": "tsc && gulp build:icons"
   },
-  "files": ["dist"],
+  "author": {
+    "name": "Alan Austin",
+    "email": "devpartner@cometapi.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cometapi-dev/n8n-nodes-cometapi.git"
+  },
+  "files": [
+    "dist"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "nodes": ["dist/nodes/CometApi/CometApi.node.js"],
-    "credentials": ["dist/credentials/CometApiApi.credentials.js"]
+    "nodes": [
+      "dist/nodes/CometApi/CometApi.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/CometApiApi.credentials.js"
+    ]
   },
   "devDependencies": {
     "gulp": "^4.0.2",
